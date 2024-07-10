@@ -55,7 +55,7 @@ do
     # Get the supported targets
     TARGETS=($(ls | grep "$app".bin | awk -F "_"$app".bin$" '{print $1}' | grep -v '_'))
 
-    target=(esp32-s3)
+    target=(esp32-p4)
     CHIPSETS="chipsets = ["
     tUP=`echo $target |  tr 'a-z' 'A-Z'`
     CHIPSETS+="\"$tUP\","
